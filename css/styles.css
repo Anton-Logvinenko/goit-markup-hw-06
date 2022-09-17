@@ -581,9 +581,11 @@ header {
 .container-footer {
   display: flex;
   align-items: baseline;
+  
 }
 .contacts-group {
   margin-right: 70px;
+  flex-grow: 1;
 }
 .social {
   margin-right: 93px;
@@ -701,7 +703,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 581px;
+  width: 521px;
   height: 581px;
   padding: 40px;
   background: #ffffff;
@@ -805,6 +807,10 @@ header {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.register-form-field.textarea {
+  margin-bottom: 20px;
+}
+
 .register-form-input:focus,
 .register-form-textarea:focus {
   outline-color: var(--accent-bg-color);
@@ -817,10 +823,8 @@ header {
 
 .register-form-agreement {
   display: flex;
+  justify-content: center;
   align-items: center;
-
-  margin-left: 16px;
-  margin-bottom: 30px;
   position: relative;
 }
 
@@ -846,7 +850,9 @@ header {
 .register-form-btn {
   width: 200px;
   margin: 0 auto;
+  margin-top: 30px;
 }
+
 
 .register-checkbox:checked + .icon-agreement .icon-check {
   opacity: 1;
